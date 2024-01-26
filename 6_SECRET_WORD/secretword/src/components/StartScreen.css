@@ -1,0 +1,50 @@
+.start h1 {
+    /*font-size: 3.5em;*/
+    color: transparent;
+    font-family: "Russo One", sans-serif;
+    text-transform: uppercase;
+    font-size: 5em;
+    transform: translatey(25px);
+    background: linear-gradient(
+    cornflowerblue 30%,
+    white,
+    darkmagenta 60%,
+    cornflowerblue 100%);
+    background-size: contain;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px silver;
+    filter: drop-shadow(5px 5px 1px black) drop-shadow(1px 1px 1px magenta);
+    animation: bg-shift 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes bg-shift {
+    0% {
+      background-position: 0 -25px;
+    }
+    100% {
+      background-position: 0 25px;
+    }
+  }
+
+.start p {
+    color: white;
+    font-family: "Yellowtail", cursive;
+    font-weight: 100;
+    font-size: 1.2em;
+    transform: translatey(-10px) rotatez(0deg);
+    text-shadow: 0 0 3px magenta, 0 0 7px magenta, 0 0 15px black, 0 0 15px black;
+    animation: hover 1s ease-in-out infinite;
+}
+
+@keyframes hover {
+    0% {
+      transform: translatey(-10px) rotatez(0deg) perspective(200px) translatez(0);
+    }
+    50% {
+      transform: translatey(-10px) rotatez(0deg) perspective(200px)
+        translatez(50px);
+    }
+    100% {
+      transform: translatey(-10px) rotatez(0deg) perspective(200px) translatez(0);
+    }
+  }
