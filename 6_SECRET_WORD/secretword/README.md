@@ -1,8 +1,20 @@
-# React + Vite
+# Secret Word - (Acerte a Palavra)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## :dart: Objetivo:
+Esse projeto tem como objetivo explorar os recursos do ReactJS.
+:warning: Esse projeto NÃO utiliza DB :warning:
 
-Currently, two official plugins are available:
+## :books: Recursos (Aprendidos, Utilizados)
+:large_blue_diamond: Hook (useState),
+:large_blue_diamond: Hook (useEffect),
+:large_blue_diamond: Hook (useCallback),
+:large_blue_diamond: Leitura de Arquivo (Data) JSON,
+:large_blue_diamond: Props,
+:large_blue_diamond: .map(),
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## :arrow_forward: Usabilidade
+:arrow_right_hook: Clique no botão (Começar o jogo)
+:arrow_right_hook: Adicione uma letra ao quadradro branco
+:arrow_right_hook: Clique no botão Jogar
+
+:information_source: O jogador tem [ 3 ] chances para a certar a palvra, caso ele erre as 3 tentativas, o jogo termina, mostrando sua pontuação e podendo ser reiniciado.
