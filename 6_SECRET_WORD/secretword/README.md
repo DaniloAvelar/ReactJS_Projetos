@@ -4,6 +4,7 @@
 Esse projeto tem como objetivo explorar os recursos do ReactJS<br />
 :warning: Esse projeto NÃO utiliza DB :warning:<br />
 
+
 ## :books: Recursos (Aprendidos, Utilizados)
 :large_blue_diamond: Hook (useState),<br />
 :large_blue_diamond: Hook (useEffect),<br />
@@ -11,6 +12,7 @@ Esse projeto tem como objetivo explorar os recursos do ReactJS<br />
 :large_blue_diamond: Leitura de Arquivo (Data) JSON,<br />
 :large_blue_diamond: Props,<br />
 :large_blue_diamond: .map(),<br />
+
 
 ## :arrow_forward: Usabilidade
 :arrow_right_hook: Clique no botão (Começar o jogo)<br />
