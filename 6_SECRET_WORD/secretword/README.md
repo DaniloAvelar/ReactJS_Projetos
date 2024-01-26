@@ -2,7 +2,7 @@
 
 ## :dart: Objetivo:
 Esse projeto tem como objetivo explorar os recursos do ReactJS<br />
-:warning: Esse projeto NÃO utiliza DB :warning:<br />
+:warning: Esse projeto NÃO utiliza DB :warning:<br /><br />
 
 
 ## :books: Recursos (Aprendidos, Utilizados)
@@ -11,7 +11,7 @@ Esse projeto tem como objetivo explorar os recursos do ReactJS<br />
 :large_blue_diamond: Hook (useCallback),<br />
 :large_blue_diamond: Leitura de Arquivo (Data) JSON,<br />
 :large_blue_diamond: Props,<br />
-:large_blue_diamond: .map(),<br />
+:large_blue_diamond: .map(),<br /><br />
 
 
 ## :arrow_forward: Usabilidade
