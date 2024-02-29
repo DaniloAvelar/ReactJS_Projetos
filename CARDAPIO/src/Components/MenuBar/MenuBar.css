@@ -1,0 +1,15 @@
+.menuBar {
+    display: flex;
+    margin: 0;
+    align-items: center; 
+    justify-content: flex-end; /*Alinha a Direita*/
+}
+
+.menuBar p{
+    margin: 20px;
+} 
+
+p:hover {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}

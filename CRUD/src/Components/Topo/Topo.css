@@ -1,0 +1,10 @@
+.topo {
+    background-color: #1976d2;
+    color:#aec4da;
+    position: static;
+    width: 100%;
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+    display:flex;
+    height: 70px;
+  }

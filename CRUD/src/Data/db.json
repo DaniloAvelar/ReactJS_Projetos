@@ -1,0 +1,52 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Camiseta",
+      "tamanho": "GG",
+      "genero": "Masculina",
+      "cor": "Branca",
+      "preco": 49.9
+    },
+    {
+      "id": 2,
+      "nome": "Camiseta",
+      "tamanho": "XXG",
+      "cor": "Vermelha",
+      "genero": "Masculina",
+      "preco": "39.9"
+    },
+    {
+      "id": 3,
+      "nome": "Meias Bob Esponja",
+      "tamanho": "G",
+      "cor": "Azul e Amarela",
+      "genero": "Ambos",
+      "preco": "17.90"
+    },
+    {
+      "id": 12,
+      "nome": "Cueca Box",
+      "tamanho": "GG",
+      "cor": "Verde",
+      "genero": "Masculina",
+      "preco": "29.9"
+    },
+    {
+      "nome": "Bermuda Basquete",
+      "tamanho": "EXG",
+      "cor": "Preto",
+      "genero": "Masc",
+      "preco": "79.9",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "nome": "teste botão",
+      "tamanho": "EXG",
+      "cor": "Verde",
+      "genero": "Masc",
+      "preco": "79.9"
+    }
+  ]
+}
