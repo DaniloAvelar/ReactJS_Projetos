@@ -2,10 +2,21 @@
 
 ## :dart: Objetivo:
 Esse projeto tem como objetivo explorar os recursos do ReactJS em um sistema simples de cadastro de produtos<br />
-:warning: Esse projeto AINDA NÃO utiliza DB :warning:<br /><br />
+:warning: Este Projeto utiliza JSON Server (Simulação de API de dados :warning:<br /><br />
 
-## O Projeto caonta com 
-Cadastro, Alteração, Vizualização e Exclusão de ##PRODUTO
+## O Projeto conta com 
+:white_check_mark: Cadastro
+:white_check_mark: Alteração
+:white_check_mark: Vizualização
+:white_check_mark: Exclusão 
+
+## Melhorias a serem implantadas
+:heavy_plus_sign: Controle de Usuários
+:heavy_plus_sign: Alertas
+:heavy_plus_sign: Modal (Edição rápida)
+:heavy_plus_sign: Imagem dos produtos
+:heavy_plus_sign: Código de barras (Leitura)
+
 
 ## :books: Recursos (Aprendidos, Utilizados)
 :large_blue_diamond: Hook (useState),<br />
