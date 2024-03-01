@@ -8,6 +8,8 @@
  
 #### :computer: Secret Word (Acerte a Palavra) :white_check_mark:
 #### :computer: Menu On-Line (Cardápio QRCode) 🚧 Em Desenvolvimento 🚧
+#### :computer: CRUD (Create, Read, Update and Delete) 🚧 Em Desenvolvimento 🚧
+
 
 
 
