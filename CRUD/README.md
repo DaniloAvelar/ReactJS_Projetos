@@ -5,32 +5,30 @@ Esse projeto tem como objetivo explorar os recursos do ReactJS em um sistema sim
 :warning: Este Projeto utiliza JSON Server (Simulação de API de dados :warning:<br /><br />
 
 ## O Projeto conta com 
-:white_check_mark: Cadastro
-:white_check_mark: Alteração
-:white_check_mark: Vizualização
-:white_check_mark: Exclusão 
+:white_check_mark: Cadastro<br />
+:white_check_mark: Alteração<br />
+:white_check_mark: Vizualização<br />
+:white_check_mark: Exclusão <br />
 
 ## Melhorias a serem implantadas
-:heavy_plus_sign: Controle de Usuários
-:heavy_plus_sign: Alertas
-:heavy_plus_sign: Modal (Edição rápida)
-:heavy_plus_sign: Imagem dos produtos
-:heavy_plus_sign: Código de barras (Leitura)
+:heavy_plus_sign: Controle de Usuários<br />
+:heavy_plus_sign: Alertas<br />
+:heavy_plus_sign: Modal (Edição rápida)<br />
+:heavy_plus_sign: Imagem dos produtos<br />
+:heavy_plus_sign: Código de barras (Leitura)<br />
 
 
 ## :books: Recursos (Aprendidos, Utilizados)
 :large_blue_diamond: Hook (useState),<br />
 :large_blue_diamond: Hook (useEffect),<br />
 :large_blue_diamond: Hook (useCallback),<br />
+:large_blue_diamond: Hook (useNavigate),<br />
 :large_blue_diamond: Leitura de Arquivo (Data) JSON,<br />
 :large_blue_diamond: Props,<br />
 :large_blue_diamond: .map(),<br /><br />
 
 
 ## :arrow_forward: Usabilidade
-:arrow_right_hook: Leia o QR-Code e acesse o menu on-line<br />
-:arrow_right_hook: Escolha seu produto e clique em [Adicionar ao pedido]<br />
-:arrow_right_hook: Clique em Finalizar pedido ou clique no ícone de [Pedidos] no canto superior direito da tela<br />
-:arrow_right_hook: Faça o Pgto, e seu pedido será produzido e entregue!!!<br />
+:arrow_right_hook: Cadastre de produtos para controle de estoque<br />
 
 :information_source: Esse projeto encontra-se em Desenvolvimento, ainda é versão de experimentação.
