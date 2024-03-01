@@ -2,7 +2,7 @@
 
 ## :dart: Objetivo:
 Esse projeto tem como objetivo explorar os recursos do ReactJS em um sistema simples de cadastro de produtos<br />
-:warning: Este Projeto utiliza JSON Server (Simulação de API de dados :warning:<br /><br />
+:warning: Este Projeto utiliza JSON Server (Simulação de API de dados) :warning:<br /><br />
 
 ## O Projeto conta com 
 :white_check_mark: Cadastro<br />
