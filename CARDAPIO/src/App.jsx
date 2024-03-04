@@ -1,19 +1,24 @@
+import * as React from "react";
 import { useState } from 'react'
-import restaurante from './assets/hashtaurante.webp'
 import logo from './assets/Logo_rashtaurante-removebg.png'
 import './App.css'
 import { Navegacao } from './Navegacao'
 import {ItemCardapio} from './ItemCardapio'
 import { pratosPrincipais, sobremesas, bebidas } from './cardapio'
+import { MenuBar } from './Components/MenuBar/MenuBar'
+
+
 
 export function App() {
   
-  //Criando uma Lista das lintas do Menu de opções
+  //Criando uma Lista das listas do Menu de opções
   const paginasMenu = [pratosPrincipais, sobremesas, bebidas]
+
   //variavel de controle do menu (useState)
   const [paginaSelecionada, setPaginaSelecionada] = useState(0);
   
   return <>
+    <MenuBar />
     <img src={logo} alt="" className='capa'/>
     <Navegacao setPaginaSelecionada={setPaginaSelecionada}/>
     <div className='menu'>
