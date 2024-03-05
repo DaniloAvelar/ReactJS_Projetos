@@ -45,7 +45,7 @@ const Exclui = () => {
     <div className="Container">
       <h3>Excluir produto</h3>
       <div className="divAlert">
-      <span class="material-symbols-outlined">warning</span> Tem certeza que deseja <b>"EXCLUIR"</b> esse produto?
+      <span className="material-symbols-outlined">warning</span> Tem certeza que deseja <b>"EXCLUIR"</b> esse produto?
       </div><br />
       <div className="ContainerDelete">
         <div className='divContainerDelete'>

@@ -25,6 +25,18 @@
     margin: 40px; 
 }
 
+.ContainerSearch{
+    display: flex;
+}
+
+.serchRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+    text-align: left;  
+}
+
 .divContainerDelete{
     display: grid;
     grid-gap: 30px;
