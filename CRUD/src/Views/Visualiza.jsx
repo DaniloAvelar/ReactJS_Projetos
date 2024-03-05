@@ -15,6 +15,7 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import '../Views/Global.css';
+import Search from '../Components/SearchForm/SearchBusca';
 // import Alert from '@mui/material/Alert';
 
 
@@ -73,6 +74,8 @@ const Visualiza = (props) => {
   return (
     <div className="Container">
     {/* <div className='containerDataGrid'> */}
+    {/* Search - Busca */}
+    <Search /> 
       <div className="btnContainer">
         <Button
           id="page-1"
@@ -100,13 +103,13 @@ const Visualiza = (props) => {
         <TableHead>
           <TableRow>
             {/*Titulos das Colunas*/}
-            <TableCell>Produto</TableCell>
-            <TableCell align="center">Tamanho</TableCell>
-            <TableCell align="center">Cor</TableCell>
-            <TableCell align="center">Gênero</TableCell>
-            <TableCell align="center">Preço</TableCell>
-            <TableCell align="center">Editar</TableCell>
-            <TableCell align="center">Excluir</TableCell>
+            <TableCell><b>Produto</b></TableCell>
+            <TableCell align="center"><b>Tamanho</b></TableCell>
+            <TableCell align="center"><b>Cor</b></TableCell>
+            <TableCell align="center"><b>Gênero</b></TableCell>
+            <TableCell align="center"><b>Preço</b></TableCell>
+            <TableCell align="center"><b>Editar</b></TableCell>
+            <TableCell align="center"><b>Excluir</b></TableCell>
 
           </TableRow>
         </TableHead>
@@ -119,7 +122,7 @@ const Visualiza = (props) => {
               <TableCell align="center">{row.genero}</TableCell>
               <TableCell align="center">{row.preco}</TableCell>
               <TableCell align="center">
-              <button type="submit" id={row.id} name="edit" className="btnEdit" onClick={handleClick}><span class="material-symbols-outlined">edit</span></button>
+              <button type="submit" id={row.id} name="edit" className="btnEdit" onClick={handleClick}><span className="material-symbols-outlined">edit</span></button>
                 {/* <Button
                   id={row.id}
                   name="edit"
@@ -131,7 +134,7 @@ const Visualiza = (props) => {
               </TableCell>
               <TableCell align="center">
                 {/* <input type="submit" id={row.id} name="delete" onClick={handleClick}></input> */}
-                <button type="submit" id={row.id} name="delete" className="btnDelete" onClick={handleClick}><span class="material-symbols-outlined">delete</span></button>
+                <button type="submit" id={row.id} name="delete" className="btnDelete" onClick={handleClick}><span className="material-symbols-outlined">delete</span></button>
                 {/* <Button
                   id={row.id}
                   name="delete"
