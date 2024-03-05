@@ -9,6 +9,7 @@ Esse projeto tem como objetivo explorar os recursos do ReactJS em um sistema sim
 :white_check_mark: Alteração<br />
 :white_check_mark: Vizualização<br />
 :white_check_mark: Exclusão <br />
+:white_check_mark: Pesquisa <br />
 
 ## Melhorias a serem implantadas
 :heavy_plus_sign: Controle de Usuários<br />
