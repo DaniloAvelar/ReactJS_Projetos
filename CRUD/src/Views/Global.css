@@ -1,19 +1,49 @@
 .Container{
-    width: 100%;
+    
     justify-content: center; /* Alinhamento horizontal */
     align-items: center; /* Alinhamento vertical */
     text-align: center;
-    margin-top: 2%; 
+    /* margin-top: 2%;  */
     /* margin: 0px 0; */
+}
+
+.topo {
+    background-color: #314c53;
+    color:#bbdec6;
+    position: static;
+    width: 100%;
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+    display:flex;
+    height: 70px;
+  }
+
+
+
+.container div.row2:nth-child(odd) {
+    background-color:#e5fdec;
+}
+
+.MotherEdit{
+    width: 100%;
+    display: flex;
+    /* border: solid 1px red; */
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    margin-top: -30px;
 }
 
 .ContainerEdit{
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Alinhamento horizontal */
-    align-items: center; /* Alinhamento vertical */
+    justify-content: center; 
+    align-items: center; 
     text-align: left;
     margin-top: 2%; 
+    /* border: solid 1px; */
+    width: 33%;
 }
 
 .ContainerDelete{
@@ -26,7 +56,9 @@
 }
 
 .ContainerSearch{
-    display: flex;
+    /* border: solid 1px; */
+    /* background-color:rgb(214, 0, 0); */
+    margin-top: -30px;
 }
 
 .serchRow{
@@ -62,11 +94,15 @@ label{
 
 .btnContainer{
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center;
 }
 
 form{
     margin: 0 auto;
-    display: inline-block; 
+    display: inline-block;
 }
 
 input[type=text]{
@@ -139,17 +175,17 @@ input[type=submit]{
     text-align: center;
     width: 60px;
     height: 40px;
-    background-color:rgb(233, 200, 53);
+    background-color:#f0ce4e;
     color:#000;
     border: 0;
 }
 
 .btnEdit:hover{
-    background-color: rgb(139, 107, 0);
+    background-color: #c0a440;
 }
 
 .btnEdit:active{
-    background-color: #574701;
+    background-color: #947e31;
     color:#6b6b4b
 }
 
@@ -164,6 +200,7 @@ input[type=submit]{
     color:rgb(214, 0, 0);
     font-weight: 500;
     display: inline-block; 
-    padding-top: 15px;
+    padding-top: 5px;
 
 }
+

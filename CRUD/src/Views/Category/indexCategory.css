@@ -1,0 +1,69 @@
+
+.topo{
+    margin-bottom: 30px;
+}
+
+.row{
+    font-weight: 900;
+    display: flex;
+    background-color: #343a40;
+    color: #fff;
+    height: 2em;
+    justify-content: center;
+    align-items: center;
+    /* border: solid 0.2px; */
+}
+
+.row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+}
+
+.container div.row2:nth-child(odd) {
+    background-color:#e5fdec;
+}
+/* .container div:nth-child(even) {
+    background-color:#292929;
+} */
+
+.btnDelete{
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+    text-align: center;
+    width: 60px;
+    height: 40px;
+    background-color:rgb(189, 39, 39);
+    color:#fff;
+    border: 0;
+}
+
+.btnDelete:hover{
+    background-color: darkred;
+}
+
+.btnDelete:active{
+    background-color: #570101;
+    color:#6b4b4b
+}
+
+.btnEdit{
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+    text-align: center;
+    width: 60px;
+    height: 40px;
+    background-color:#f0ce4e;
+    color:#000;
+    border: 0;
+}
+
+.btnEdit:hover{
+    background-color: #c0a440;
+}
+
+.btnEdit:active{
+    background-color: #947e31;
+    color:#6b6b4b
+}
