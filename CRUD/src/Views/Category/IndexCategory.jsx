@@ -2,8 +2,6 @@ import React, { useState, useEffect, createContext } from 'react';
 import { useFetch } from '../../Components/Hooks/useFetch';
 import './indexCategory.css';
 //Modal
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
 
 
 const IndexCategory = () => {
