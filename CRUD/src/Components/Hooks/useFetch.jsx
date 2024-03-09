@@ -9,11 +9,25 @@ export const useFetch = (url) => {
     const [method, setMethod] = useState(null);
     const [data, setData] = useState(null);
     const [callFetch, setCallFetch] = useState(false);
+    const [ numRow, setNumRow] = useState(null);
 
     let navigate = useNavigate();
 
-    // Setando as Configurações para o POST
+    
 
+    //Metodo Get All Geral
+    useEffect(() => {
+        async function fetchData(){
+            const res = await fetch(url); //Lendo a URL do DB Json
+            const item = await res.json(); //Convertendo no formato Json para leitura
+            setData(item); //Alterando o estado da variavel de produtos alimentando ela com os novos produtos
+            setNumRow(item.length) //Passando o tamanho do Array para o componente
+        }
+        fetchData();
+    }, []);
+
+
+    // Setando as Configurações para o POST
     //Metodo POST Configurações
     const configPost = (data, method) => {
         if(method === "POST"){
@@ -103,6 +117,6 @@ export const useFetch = (url) => {
 
 
 
-  return {data, configPost, configPut, configDelete};
+  return {data, configPost, configPut, configDelete, numRow};
 };
 

@@ -1,5 +1,5 @@
 import { useSearchParams, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react"; 
+import { useEffect, useState } from "react";
 
 //Table Cell
 import { makeStyles } from '@material-ui/core/styles';
@@ -14,9 +14,9 @@ import Paper from '@material-ui/core/Paper';
 // Style da Table
 const useStyles = makeStyles({
     table: {
-      minWidth: 650,
+        minWidth: 650,
     },
-  });
+});
 
 const Search = () => {
     // Pegando o que vem do parametro da busca
@@ -24,7 +24,7 @@ const Search = () => {
 
     //URL enviada para API
     const urlDB = "http://localhost:3000/produtos?" + searchParams;
-    
+
     const [products, setProducts] = useState([]);
 
     const classes = useStyles();
@@ -33,7 +33,7 @@ const Search = () => {
 
     //Metodo para ler o Item a ser BUSCADO
     useEffect(() => {
-        async function fetchData(){
+        async function fetchData() {
             const res = await fetch(urlDB); //Lendo a URL do DB Json
             const data = await res.json(); //Convertendo no formato Json para leitura
             setProducts(data); //Alterando o estado da variavel de produtos alimentando ela com os novos produtos
@@ -43,32 +43,35 @@ const Search = () => {
     }, [urlDB]);
 
     // Função que redireciona os botões (Add-Edit-Delete)
-    function handleClick(e){
+    function handleClick(e) {
         e.preventDefault();
         let redirect = e.currentTarget.name
         let idProdEdit = e.currentTarget.id
         let idProdDelete = e.currentTarget.id
         let idVoltar = e.currentTarget.id
-  
-        if(redirect === 'add')
-          navigate("/produto")
-  
-       if (redirect === 'edit')
-          navigate("/editProduct/"+idProdEdit)
-  
-       if (redirect === 'delete')
-          navigate("/deleteProduct/"+idProdDelete)
 
-        if(idVoltar === 'voltar')
+        if (redirect === 'add')
+            navigate("/produto")
+
+        if (redirect === 'edit')
+            navigate("/editProduct/" + idProdEdit)
+
+        if (redirect === 'delete')
+            navigate("/deleteProduct/" + idProdDelete)
+
+        if (idVoltar === 'voltar')
             navigate("/")
-      }
+    }
 
-  return (
-    <div>      
+    return (
+        <div className="Container">
+            <div className='topo'>
+                <h1>Produtos</h1>
+            </div>
             <TableContainer component={Paper}>
                 <Table className={classes.table} size="small" aria-label="a dense table">
                     <TableHead>
-                        <TableRow>
+                        <TableRow className={classes.table}>
                             {/*Titulos das Colunas*/}
                             <TableCell><b>Produto</b></TableCell>
                             <TableCell align="center"><b>Tamanho</b></TableCell>
@@ -80,32 +83,32 @@ const Search = () => {
                         </TableRow>
                     </TableHead>
                     {products && products.map((row) => (
-                    <TableBody>
-                        <TableRow key={row.id}>
-                            <TableCell component="th" scope="row">{row.nome}</TableCell>
-                            <TableCell align="center">{row.tamanho}</TableCell>
-                            <TableCell align="center">{row.cor}</TableCell>
-                            <TableCell align="center">{row.genero}</TableCell>
-                            <TableCell align="center">{row.preco}</TableCell>
-                            <TableCell align="center">
-                                <button type="submit" id={row.id} name="edit" className="btnEdit" onClick={handleClick}><span className="material-symbols-outlined">edit</span></button>
-                            </TableCell>
-                            <TableCell align="center">
-                                <button type="submit" id={row.id} name="delete" className="btnDelete" onClick={handleClick}><span className="material-symbols-outlined">delete</span></button>
-                            </TableCell>
-                        </TableRow>
-                    </TableBody>
+                        <TableBody>
+                            <TableRow key={row.id}>
+                                <TableCell component="th" scope="row">{row.nome}</TableCell>
+                                <TableCell align="center">{row.tamanho}</TableCell>
+                                <TableCell align="center">{row.cor}</TableCell>
+                                <TableCell align="center">{row.genero}</TableCell>
+                                <TableCell align="center">{row.preco}</TableCell>
+                                <TableCell align="center">
+                                    <button type="submit" id={row.id} name="edit" className="btnEdit" onClick={handleClick}><span className="material-symbols-outlined">edit</span></button>
+                                </TableCell>
+                                <TableCell align="center">
+                                    <button type="submit" id={row.id} name="delete" className="btnDelete" onClick={handleClick}><span className="material-symbols-outlined">delete</span></button>
+                                </TableCell>
+                            </TableRow>
+                        </TableBody>
                     ))}
                 </Table>
             </TableContainer>
-        {products.length >= 1 ? null : 
-        <div className="Container">
-            <h2>Nenhum produto encontrado</h2>
-            <input type='submit' id="voltar" onClick={handleClick} value="Voltar" />
-        </div> 
-        }
-    </div>
-  )
+            {products.length >= 1 ? null :
+                <div className="Container">
+                    <h2>Nenhum produto encontrado</h2>
+                    <input type='submit' id="voltar" onClick={handleClick} value="Voltar" />
+                </div>
+            }
+        </div>
+    )
 }
 
 export default Search

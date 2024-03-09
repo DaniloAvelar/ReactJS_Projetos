@@ -4,9 +4,9 @@
       "id": 1,
       "nome": "Camiseta",
       "tamanho": "GG",
+      "cor": "Verde",
       "genero": "Masculina",
-      "cor": "Branca",
-      "preco": 49.9
+      "preco": "79.9"
     },
     {
       "id": 2,
@@ -47,6 +47,26 @@
       "cor": "Verde",
       "genero": "Masc",
       "preco": "79.9"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "1",
+      "descricao": "Camiseta",
+      "dtCriacao": "07/03/2024",
+      "dtExclusao": ""
+    },
+    {
+      "id": "2",
+      "descricao": "Bermuda",
+      "dtCriacao": "07/03/2024",
+      "dtExclusao": ""
+    },
+    {
+      "id": "3",
+      "descricao": "Shorts",
+      "dtCriacao": "07/03/2024",
+      "dtExclusao": ""
     }
   ]
 }
