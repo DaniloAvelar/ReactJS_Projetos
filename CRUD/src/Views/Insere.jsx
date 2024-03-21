@@ -16,11 +16,15 @@ const Insere = () => {
   const [genero, setGenero] = useState([]);
   const [cor, setCor] = useState([]);
   const [preco, setPreco] = useState([]);
+  const [dtCadastro, setDtCadastro] = useState([]);
 
   let navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const current = new Date();
+    const date = `${current.getDate()}/${current.getMonth() + 1}/${current.getFullYear()}`;
 
     //Criando um objeto para mandar para o POST
     const product = {
@@ -29,6 +33,7 @@ const Insere = () => {
       cor: cor,
       genero: genero,
       preco: preco,
+      dtCadastro: date,
     }
 
     // Regras para o POST

@@ -6,7 +6,8 @@
       "tamanho": "GG",
       "cor": "Verde",
       "genero": "Masculina",
-      "preco": "79.9"
+      "preco": "79.9",
+      "dtCadastro": ""
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "tamanho": "XXG",
       "cor": "Vermelha",
       "genero": "Masculina",
-      "preco": "39.9"
+      "preco": "39.9",
+      "dtCadastro": ""
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "tamanho": "G",
       "cor": "Azul e Amarela",
       "genero": "Ambos",
-      "preco": "17.90"
+      "preco": "17.90",
+      "dtCadastro": ""
     },
     {
       "id": 12,
@@ -30,7 +33,8 @@
       "tamanho": "GG",
       "cor": "Verde",
       "genero": "Masculina",
-      "preco": "29.9"
+      "preco": "29.9",
+      "dtCadastro": ""
     },
     {
       "nome": "Bermuda Basquete",
@@ -38,6 +42,7 @@
       "cor": "Preto",
       "genero": "Masc",
       "preco": "79.9",
+      "dtCadastro": "",
       "id": 13
     },
     {
@@ -46,27 +51,54 @@
       "tamanho": "EXG",
       "cor": "Verde",
       "genero": "Masc",
-      "preco": "79.9"
+      "preco": "79.9",
+      "dtCadastro": ""
+    },
+    {
+      "nome": "Boné Chicago Bulls",
+      "tamanho": "Único",
+      "cor": "Vermelho",
+      "genero": "Unisex",
+      "preco": "89.90",
+      "dtCadastro": "17/3/2024",
+      "id": 16
     }
   ],
   "categorias": [
     {
-      "id": "1",
       "descricao": "Camiseta",
-      "dtCriacao": "07/03/2024",
-      "dtExclusao": ""
+      "dtCriacao": "21/3/2024",
+      "dtAtualizcao": null,
+      "dtExclusao": null,
+      "id": 1
     },
     {
-      "id": "2",
       "descricao": "Bermuda",
-      "dtCriacao": "07/03/2024",
-      "dtExclusao": ""
+      "dtCriacao": "21/3/2024",
+      "dtAtualizcao": null,
+      "dtExclusao": null,
+      "id": 2
     },
     {
-      "id": "3",
-      "descricao": "Shorts",
-      "dtCriacao": "07/03/2024",
-      "dtExclusao": ""
+      "descricao": "Tênis",
+      "dtCriacao": "21/3/2024",
+      "dtAtualizcao": null,
+      "dtExclusao": null,
+      "id": 3
+    },
+    {
+      "descricao": "Meia",
+      "dtCriacao": "21/3/2024",
+      "dtAtualizcao": null,
+      "dtExclusao": null,
+      "id": 4
+    },
+    {
+      "descricao": "Acessório",
+      "dtCriacao": "21/3/2024",
+      "dtAtualizcao": null,
+      "dtExclusao": null,
+      "id": 5
     }
   ]
 }

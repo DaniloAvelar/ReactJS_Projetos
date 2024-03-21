@@ -33,7 +33,7 @@ const Exclui = () => {
     e.preventDefault();
 
     //Metodo Eclusão
-    configDelete(data, "DELETE")
+    configDelete("DELETE")
 
   }
 

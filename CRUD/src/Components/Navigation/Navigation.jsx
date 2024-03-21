@@ -4,6 +4,18 @@ import './Navigation.css'
 
 
 const Navigation = () => {
+
+    //Função para fechar o menu após clique em qq opção
+    function closeMenu() {
+        var x = document.getElementById("menu__btn");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+
     return (
         <div>
             <nav className="navbar navbar-dark bg-dark">
@@ -16,8 +28,8 @@ const Navigation = () => {
                     </label>
 
                     <ul className="menu__box">
-                        <li><NavLink to='/categorias' className="menu__item">Categorias</NavLink></li>
-                        <li><NavLink to='/' className="menu__item">Produtos</NavLink></li>
+                        <li><NavLink to='/categorias' className="menu__item" onClick={closeMenu}>Categorias</NavLink></li>
+                        <li><NavLink to='/' className="menu__item" onClick={closeMenu}>Produtos</NavLink></li>
                         {/* <li><a className="menu__item" href="#">Home</a></li>
                         <li><a className="menu__item" href="#">About</a></li>
                         <li><a className="menu__item" href="#">Team</a></li>

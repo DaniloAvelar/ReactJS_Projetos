@@ -108,6 +108,9 @@ const Visualiza = (props) => {
             Preço
           </div>
           <div className="col">
+            Data Cad.
+          </div>
+          <div className="col">
             Editar
           </div>
           <div className="col">
@@ -121,6 +124,7 @@ const Visualiza = (props) => {
             <div className="col">{item.cor}</div>
             <div className="col">{item.genero}</div>
             <div className="col">{item.preco}</div>
+            <div className="col">{item.dtCadastro}</div>
             <div className="col">
               <button type="submit" id={item.id} name="edit" className="btnEdit" onClick={handleClick}><span className="material-symbols-outlined">edit</span></button>
             </div>

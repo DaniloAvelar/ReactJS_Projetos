@@ -1,0 +1,26 @@
+.divConteudo > form > label{
+    text-align: left;
+    color:gray;
+
+}
+
+form{
+    padding-top: 60px;
+}
+
+.divConteudo > h5{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:rgb(189, 39, 39);
+}
+
+.divButtons{
+    padding-top: 6em;
+}
+
+.container{
+    margin-top: 20px;
+}
+
+/* Ajuste Alert */
+
