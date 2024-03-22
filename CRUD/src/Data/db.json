@@ -7,7 +7,8 @@
       "cor": "Verde",
       "genero": "Masculina",
       "preco": "79.9",
-      "dtCadastro": ""
+      "dtCadastro": "",
+      "avisar":true
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "cor": "Vermelha",
       "genero": "Masculina",
       "preco": "39.9",
-      "dtCadastro": ""
+      "dtCadastro": "",
+      "avisar":true
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "cor": "Azul e Amarela",
       "genero": "Ambos",
       "preco": "17.90",
-      "dtCadastro": ""
+      "dtCadastro": "",
+      "avisar":true
     },
     {
       "id": 12,
@@ -34,7 +37,8 @@
       "cor": "Verde",
       "genero": "Masculina",
       "preco": "29.9",
-      "dtCadastro": ""
+      "dtCadastro": "",
+      "avisar":false
     },
     {
       "nome": "Bermuda Basquete",
@@ -43,7 +47,8 @@
       "genero": "Masc",
       "preco": "79.9",
       "dtCadastro": "",
-      "id": 13
+      "id": 13,
+      "avisar":true
     },
     {
       "id": 14,

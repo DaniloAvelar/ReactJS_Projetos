@@ -84,3 +84,26 @@
   .rigthtButtons > .material-symbols-outlined{
     padding-right: 20px;
   }
+
+
+  .notif {
+    display: block;
+    position: absolute;
+    top: 0.3em;
+    right: 4.7em;
+    line-height: 16px;
+    height: 16px;
+    padding: 0 5px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: red;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.5);
+    /* border: 1px solid; */
+    border-radius: 10px;
+    /* box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.09); */
+    cursor: pointer;
+  }
+
+  .sino{
+    cursor: pointer;
+  }

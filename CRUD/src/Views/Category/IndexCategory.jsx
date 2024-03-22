@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useFetch } from '../../Components/Hooks/useFetch';
 import './indexCategory.css';
+
 //Modal
 import Modal from '../../Components/Modal/Category/editModal';
 import DeleteModal from '../../Components/Modal/Category/deleteModal';
@@ -44,7 +45,6 @@ const IndexCategory = () => {
         //console.log("UrlId:", urlIdCategory)
 
         handlepopulamodal(idCateg)
-
 
         //Abro o Modal
         setOpenModal(true);

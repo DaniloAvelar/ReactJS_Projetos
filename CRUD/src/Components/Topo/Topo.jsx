@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 import './Topo.css';
 
 
-
 const Topo = () => {
 
   const localizacao = useLocation();
