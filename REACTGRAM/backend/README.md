@@ -1,6 +1,8 @@
 
 # REACTGRAM - (Projeto similar ao Instagram)
 
+<br /><img src="https://skillicons.dev/icons?i=react,nodejs,js,html,css" /><br />
+
 ## :dart: Objetivo:
 Esse projeto tem como objetivo explorar os recursos do ReactJS e NodeJS em um sistema similar ao famoso Instagram<br />
 
@@ -17,12 +19,12 @@ Esse projeto tem como objetivo explorar os recursos do ReactJS e NodeJS em um si
 ## :books: Recursos (Utilizados)
 
 ### :book: Back-end
-:large_orange_diamond: NodeJS
-:large_orange_diamond: Express(FrameWork)
-:large_orange_diamond: MongoDB (DB Principal)
-:large_orange_diamond: Mongoose(Library)
-:large_orange_diamond: API (REST-Full)
-:large_orange_diamond: Upload Image
+:large_orange_diamond: NodeJS<br />
+:large_orange_diamond: Express(FrameWork)<br />
+:large_orange_diamond: MongoDB (DB Principal)<br />
+:large_orange_diamond: Mongoose(Library)<br />
+:large_orange_diamond: API (REST-Full)<br />
+:large_orange_diamond: Upload Image<br />
 
 ### :computer: Front-end
 :large_blue_diamond: Hook (useState),<br />
