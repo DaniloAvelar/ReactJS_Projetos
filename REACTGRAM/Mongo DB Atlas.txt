@@ -1,0 +1,12 @@
+Mongo DB Atlas
+
+User_Site: da.avelar@ ...
+Pass_Site: 393MongoDbAtlas#
+
+URL : https://cloud.mongodb.com/v2/6632598857283f6204ed9b82#/overview?automateSecurity=true&connectCluster=Cluster0
+User: DBcobwebGram
+Pass: xteL7C1B0H0wVRx2
+Conn: mongodb+srv://DBcobwebGram:xteL7C1B0H0wVRx2@cluster0.nk9uolf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+CONN:mongodb+srv://DBcobwebGram:<password>@cluster0.nk9uolf.mongodb.net/
+
