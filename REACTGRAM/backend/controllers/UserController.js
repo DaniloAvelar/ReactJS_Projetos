@@ -5,6 +5,7 @@ const User = require("../models/UserModel");
 const bcrypt = require("bcryptjs");
 const { profile } = require("console");
 const jwt = require("jsonwebtoken");
+const { default: mongoose } = require("mongoose");
 
 //Pegando a KeySecret do .env
 const jwtSecret = process.env.JWT_SECRET;
@@ -28,7 +29,7 @@ const register = async (req, res) => {
         return;
     }
 
-    //Generate password Has
+    //Generate password Hash
     const salt = await bcrypt.genSalt();
     const passwordHash = await bcrypt.hash(password, salt);
 
@@ -66,14 +67,14 @@ const login = async (req, res) => {
     }
 
     //Checar se senhas são iguais
-    if(!(await bcrypt.compare(password, user.password))) {
-        res.status(422).json({errors:["Senha é inválida"] })
+    if (!(await bcrypt.compare(password, user.password))) {
+        res.status(422).json({ errors: ["Senha é inválida"] })
         return
     }
 
     //Se deu tudo certo
-     //Returning the created user
-     res.status(201).json({
+    //Returning the created user
+    res.status(201).json({
         _id: user._id,
         profileImage: user.profileImage,
         token: generateToken(user._id),
@@ -86,9 +87,51 @@ const getCurrentUser = async (req, res) => {
     //O usuario foi passado no middleware de AuthGuard, por isso funciona aqui
     const user = req.user;
 
-    res.status(200).json({user});
+    res.status(200).json({ user });
 
 };
+
+//Update User
+
+const update = async (req, res) => {
+    const { name, password, bio } = req.body;
+    let profileImage = null;
+
+    if (req.file) {
+        profileImage = req.file.profilename;
+    }
+
+    const reqUser = req.user;
+
+    const user = await User.findById(new mongoose.Types.ObjectId(reqUser._id)).select("-password");
+
+    
+    if ((name) && (name.length >= 3)){
+        user.name = name;
+    }
+    else return res.status(422).json({errors: ["O usuário deve conter no mínimo 3 caracteres! xxx"] })
+
+    if (password) {
+        //Generate password Hash
+        const salt = await bcrypt.genSalt();
+        const passwordHash = await bcrypt.hash(password, salt);
+
+        user.password = passwordHash;
+    }
+
+    if(profileImage) {
+        user.profileImage = profileImage;
+    }
+
+    if(bio) {
+        user.bio = bio;
+    }
+
+    //Salvando no DB
+    await user.save()
+
+    res.status(200).json({ msg: "Usuário alterado com sucesso !", data: user })
+}
 
 
 //Exportando um objeto onde tenha cada função do arquivo, assim podemos utilizar separadamente no arquivo de rotas
@@ -96,5 +139,6 @@ module.exports = {
     register,
     login,
     getCurrentUser,
+    update,
 };
 

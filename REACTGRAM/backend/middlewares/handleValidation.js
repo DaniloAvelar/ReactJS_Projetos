@@ -2,6 +2,7 @@ const { validationResult } = require("express-validator");
 
 
 const validate = (req, res, next) => {
+
     //Toda validação retornará possíveis erros, então checamos isso primeiro
     const errors = validationResult(req);
 
