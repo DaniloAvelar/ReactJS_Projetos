@@ -30,6 +30,7 @@ const imageStore = multer.diskStorage({
 const imageUpload = multer({
     storage: imageStore,
     fileFilter(req, file, cb){
+        // console.log("Entrei no ImageUpload");
         if(!file.originalname.match(/\.(png|jpg)$/)){
             //Somente upload com extensao .jpg ou .png
             return cb(new Error("Por favor, envie fotos com somente com as extensões .jpg ou .png!"))

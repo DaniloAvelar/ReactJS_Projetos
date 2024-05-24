@@ -4,6 +4,7 @@ const jwt = require("jsonwebtoken");
 const jwtSecret = process.env.JWT_SECRET;
 
 const authGuard = async (req, res, next) => {
+    //  console.log("Entrei no AuthGuard");
     //Checando se o Cabeçalho foi enviado, a autenticação [Bearer] vem via cabeçalho
     const authHeader = req.headers.authorization;
     //Aqui que quebro no primeiro espaço, pois, não preciso da palavra [Bearer], pego somente a chave enviada
@@ -26,6 +27,4 @@ const authGuard = async (req, res, next) => {
     }
 }
 
-module.exports = {
-    authGuard,
-}
+module.exports = authGuard

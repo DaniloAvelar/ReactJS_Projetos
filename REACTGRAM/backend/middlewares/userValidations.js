@@ -32,6 +32,7 @@ const userCreateValidation = () => {
 };
 
 const loginValidation = () => {
+    // console.log("Entrei no login Validation")
     return [
         body("email")
             .isString()
